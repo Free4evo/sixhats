@@ -1,0 +1,29 @@
+#orderUs{
+  background-color: #5072A7;
+  padding-left: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 3.12vw;
+  }
+
+  div.ol{
+    align-items: center;
+    margin-top: 3.1vw;
+    margin-bottom: 4.3vw;
+    margin-right: 8.7vw;
+
+    img{
+      width: 3vw;
+      margin-right: 1.56vw;
+    }
+
+    p{
+      font-size: 1.25vw;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}

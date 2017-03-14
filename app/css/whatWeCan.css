@@ -1,0 +1,111 @@
+#whatWeCan{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-bottom: 3.7vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5.85vw;
+    margin-bottom: 5.5vw;
+  }
+
+  .gif-plate{
+    width: 25.5vw;
+    height: 32.3vw;
+    margin-right: 2.4vw;
+    margin-bottom: 2.4vw;
+    background: #fff;
+    box-shadow: 0 0 0.8vw rgba(0,0,0,0.5);
+
+    img{
+      height: 25.4vw;
+    }
+
+    hr{
+      background: red;
+      height: 1px;
+      border: none;
+      width: 100%;
+      margin: 0;
+    }
+
+    .text-plate{
+      background-color: #fff;
+      height: 6.8vw;
+      padding-left: 2.2vw;
+      padding-right: 2.2vw;
+
+      p{
+        font-size: 0.86vw;
+      }
+
+      p:first-of-type{
+        font-size: 1.56vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0.5vw;
+        margin-top: 0.8vw;
+      }
+    }
+  }
+
+  .aside{
+    margin-left: 3.77vw;
+
+    .video-play-img{
+    width: 16vw;
+    height: 4vw;
+    margin-bottom: 3.6vw;
+    }
+
+    .green-field{
+      background-color: #BEDB89;
+      width: 100%;
+      padding: 2.9vw;
+      align-items: center;
+
+      p{
+        font-size: 1vw;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+      }
+
+      p.upper{
+        margin-bottom: 3vw;
+        color: black;
+        font-size: 1.17vw;
+        font-weight: 500;
+      }
+
+      input{
+        margin-bottom: 0.8vw;
+        font-size: 1vw;
+        width: 22.4vw;
+        height: 2.34vw;
+      }
+
+      .button{
+        width: 16.25vw;
+        height: 3.3vw;
+        font-size: 1.25vw;
+        font-weight: 600;
+        color: #fff;
+        background-color: red;
+        border: none;
+        margin-bottom: 3.9vw;
+      }
+
+      .grantee{
+        height: 2.34vw;
+
+        img{
+        width: 1.3vw;
+        margin-right: 1vw;
+        }
+      }
+    }
+  }
+}

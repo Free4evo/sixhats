@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<hrml lang="ru">
-  <header>
+<html lang="ru">
+  <head>
     <meta charset="utf-8">
-       <title>SixHats</title>
-       <meta name=viewport content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" type="text/css" href="css/reset.css">
-       <link rel="stylesheet" type="text/css" href="css/style.css">
-       <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
-       <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
-       <link rel="stylesheet" type="text/css" href="css/media.css">
-
-    <charset></charset>
-  </header>
+    <title>SixHats</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+  </head>
   <body>
     <header>
       <div class="headerBar">
         <img src="img/sixhats.svg" alt="logo">
         <div class="langBar">
-          <p>ru</p>
           <a href="./en">en</a>
+          <p>ru</p>
         </div>
         <div class="contactsBar">
-          <a href="tel:+380991006421">+38 (099) 100 64 21</a>
-          <a href="tel:+380638566040">+38 (063) 856 60 40</a>
-          <a href="mail:welcome@sixhats.com.ua">welcome@sixhats.com.ua</a>
-          <a href="">заказать звонок</a>
+          <a href="tel:+380991006421" class="tel">+38 (099) 100 64 21</a>
+          <a href="tel:+380638566040" class="tel">+38 (063) 856 60 40</a>
+          <a href="mail:welcome@sixhats.com.ua" class="mail">welcome@sixhats.com.ua</a>
+          <button type="button" class="button">заказать звонок</button>
         </div>
       </div>
-      <div>
-        <h1>создание видеороликов и инфографики для увеличения продаж</h1>
-        <p>находимся в Киеве, работаем по всему миру</p>
+      <div class="create">
+        <h1>создание<br>видеороликов и инфографики<br>для увеличения продаж</h1><br>
+        <p>находимся в Киеве,<br>работаем по всему миру</p>
       </div>
     </header>
     <section id="navigation">
@@ -43,57 +41,58 @@
     <section id="whatWeCan">
       <h2>что мы можем создать?</h2>
       <div>
-        <div>
-          <div>
-            <div>
+        <div class="column">
+          <div class>
+            <div class="column gif-plate">
               <img src="img/gif/infogr.gif">
-              <hr class="redLine">
-              <div>
+              <hr>
+              <div class="column text-plate">
                 <p>ИНФОГРАФИКА</p>
-                <p>(написание сценария, озвучание,<br>подбор музыки, прорисовка<br>графики, анимация)</p>
+                <p>(написание сценария, озвучание, подбор музыки, прорисовка графики, анимация)</p>
               </div>
             </div>
-            <div>
+            <div class="column gif-plate">
               <img src="img/gif/mix.gif">
-              <hr class="redLine">
-              <div>
+              <hr>
+              <div class="column text-plate">
                 <p>mix графики и видео</p>
                 <p>(шторминг концепций, написание сценария, озвучание, подбор музыки, прорисовка графики, выбор локаций, выбор актеров, съемка, анимация, монтаж)</p>
               </div>
             </div>
           </div>
           <div>
-            <div>
+            <div class="column gif-plate">
               <img src="img/gif/promo.gif">
-              <hr class="redLine">
-              <div>
+              <hr>
+              <div class="column text-plate">
                 <p>Промо-видео</p>
                 <p>(шторминг концепций, написание сценария, съемка и монтаж)</p>
               </div>
             </div>
-            <div>
+            <div class="column gif-plate">
               <img src="img/gif/video.gif">
-              <hr class="redLine">
-              <div>
+              <hr>
+              <div class="column text-plate">
                 <p>реклама для тв</p>
                 <p>(шторминг идей, написание сценария, создание раскадровки, подбор актёров, подбор локаций, съемка и монтаж видео, озвучание, написание музыки)</p>
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div class="column aside">
           <a class="show_video_popup" href="https://www.youtube.com/embed/sxpNI1H4ipA?rel=0&amp;controls=0&amp;showinfo=0">
-            <img src="img/videoButton.svg" alt="play img" class="videoPlayImg">
+            <img src="img/videoButton.svg" alt="play img" class="video-play-img">
           </a>
-          <div>
-            <div class="form-title">Оставьте заявку на расчет<br> стоимости видеоролика и получите <span>продвижение в YouTube</span></div>
+          <div class="column green-field">
+            <p class="upper">Оставьте заявку на расчет<br> стоимости видеоролика и получите <br>продвижение в YouTube</p>
             <input id="name" name="name" type="text" placeholder="Ваше имя" required=""/>
             <input class="email" id="email" name="email" type="email" placeholder="Ваш E-mail" required="" title="Введите Ваш E-mail">
             <input id="phone" name="phone" id="phone1" type="text" placeholder="Ваш номер телефона" required=""/>
             <input class="button" id="order-1" type="submit" value="отправить заявку"/>
             <div class="grantee">
+              <img src="img/lock.svg" alt="lock">
               <div>
-                <img src="img/lock.svg" alt="lock"> Мы гарантируем безопасность<br>ваших данных
+                 <p>Мы гарантируем безопасность<br>ваших данных</p>
               </div>
             </div>
           </div>
@@ -103,15 +102,15 @@
     <section id="orderUs">
       <h2>Заказав у нас, вы получите:</h2>
       <div>
-        <div>
+        <div class="ol">
           <img src="img/1incircle.svg" alt="first">
           <p>Консультацию по продвижению в YouTube в подарок</p>
         </div>
-        <div>
+        <div class="ol">
           <img src="img/2incircle.svg" alt="second">
-          <p>50 % скидка на разработку статической инфографики на основе материалов ролика</p>
+          <p>50 % скидка на разработку<br> статической инфографики на основе материалов ролика</p>
         </div>
-        <div>
+        <div class="ol">
           <img src="img/3incircle.svg" alt="third">
           <p>При заказе ролика от 5 минут - 1 минуту бесплатно</p>
         </div>

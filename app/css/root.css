@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA15Thin.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA25ExtraLight.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA35Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA45Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA55Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA65Bold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA75ExtraBold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA85Heavy.otf);
+    font-weight: 800;
+}
+
+:root{
+  font-family: 'CoreSans';
+  font-weight: 400;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcsa{
+    justify-content: space-around;
+}

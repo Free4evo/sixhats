@@ -2,11 +2,12 @@
 exports.files = {
   javascripts: {
     joinTo: {
-      'vendor.js': /^(?!app)/, // Files that are not in `app` dir.
+      'vendor.js': /^(?!app)/, 
       'app.js': /^app/
     }
   },
-  stylesheets: {joinTo: 'app.css'}
+  stylesheets: {
+	joinTo: 'app.css'}
 };
 
 exports.plugins = {
