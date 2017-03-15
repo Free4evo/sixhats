@@ -1,0 +1,18 @@
+#clients{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+  padding-bottom: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 4.7vw;
+    margin-bottom: 4.7vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    max-width: 10.5vw;
+  }
+}
