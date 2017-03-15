@@ -17,6 +17,10 @@
     border-right: 1px solid red;
   }
 
+  a:hover{
+    color: darkgoldenrod;
+  }
+
   a:last-of-type{
     border: none;
   }

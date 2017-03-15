@@ -1,0 +1,25 @@
+#whoWork{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+  padding-bottom: 2.7vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 4.7vw;
+    margin-bottom: 4.7vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    width: 13.3vw;
+    margin-bottom: 1.3vw;
+  }
+
+  p{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 4.3vw;
+  }
+}

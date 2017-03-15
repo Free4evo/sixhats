@@ -1,0 +1,68 @@
+#whyWe{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+
+  img{
+    height: 8.4vw;
+    margin-right: 1.5vw;
+  }
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 3.12vw;
+    margin-bottom: 3.12vw;
+  }
+
+  h3{
+    font-size: 1.25vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.5vw;
+  }
+
+  p{
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 18vw;
+    margin-right: 6vw;
+    margin-bottom: 6.25vw;
+  }
+
+  hr{
+    width: 61.5vw;
+    background-color: red;
+    border: none;
+    height: 1px;
+    margin-top: 3.75vw;
+  }
+
+  .mail{
+    font-size: 2.58vw;
+    font-weight: 700;
+    margin-top: 5.3vw;
+    margin-bottom: 2.7vw;
+    text-align: center;
+  }
+
+  .tel{
+    font-size: 1.8vw;
+  }
+
+  .button{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    border: 2px solid red;
+    cursor: pointer;
+    margin-left: 5.7vw;
+    margin-bottom: 6vw;
+    height: 3.5vw;
+  }
+
+  .button:hover{
+    color: red;
+    background-color: #fff;
+  }
+}

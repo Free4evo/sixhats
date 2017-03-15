@@ -1,0 +1,27 @@
+#howWork{
+  padding-left: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 6.25vw;
+    margin-bottom: 6.25vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    width: 19.3vw;
+    margin-right: 2.2vw;
+    margin-bottom: 1.4vw;
+  }
+
+  img.mobile{
+    display: none;
+  }
+
+  p{
+    font-size: 1.25vw;
+    width: 15.6vw;
+    margin-bottom: 7vw;
+  }
+}

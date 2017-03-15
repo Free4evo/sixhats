@@ -47,7 +47,13 @@ header{
       color: #fff;
       font-size: 1vw;
       font-weight: 600;
-      border: none;
+      border: 2px solid red;
+      cursor: pointer;
+    }
+
+    .button:hover{
+      color: red;
+      background-color: #fff;
     }
   }
 
