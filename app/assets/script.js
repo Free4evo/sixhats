@@ -1,3 +1,19 @@
+//mobile
+$(document).ready(function(){
+  if (window.matchMedia('(max-width: 425px)').matches) {
+      $('.contacts-bar').insertAfter('.create');
+  }
+})
+
+$( window ).resize(function() {
+  if (window.matchMedia('(max-width: 425px)').matches) {
+    $('.contacts-bar').insertAfter('.create');
+  }else{
+    $('.contacts-bar').insertAfter('.lang-bar');
+  }
+});
+
+//slick carousel
 $(document).ready(function(){
   $('.slickCarouselWrapper').slick({
     autoplay: true,
@@ -8,6 +24,7 @@ $(document).ready(function(){
   });
 });
 
+//smoth scroll
 $(document).ready(function(){
     $("a[href^='#']").on("click", function (event) {
         event.preventDefault();
@@ -17,6 +34,7 @@ $(document).ready(function(){
     });
 });
 
+//drop down
 $(document).ready(function(){
   $(".set > a").siblings(".content").slideUp();
   $(".set > a").on("click", function(event){

@@ -5,20 +5,21 @@
     <title>SixHats</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
   </head>
   <body>
     <header>
-      <div class="headerBar">
-        <img src="img/sixhats.svg" alt="logo">
-        <div class="langBar">
+      <div class="header-bar">
+        <img src="img/sixhats.svg" alt="logo" class="mob-off">
+        <a class="mob-nav"><img src="img/menu-button.svg" alt="menu button" class="menu-button"></a>
+        <div class="lang-bar">
           <a href="./en">en</a>
           <p>ru</p>
         </div>
-        <div class="contactsBar">
+        <div class="contacts-bar">
           <a href="tel:+380991006421" class="tel">+38 (099) 100 64 21</a>
           <a href="tel:+380638566040" class="tel">+38 (063) 856 60 40</a>
           <a href="mail:welcome@sixhats.com.ua" class="mail">welcome@sixhats.com.ua</a>
@@ -39,10 +40,10 @@
       <a href="">ВОПРОСЫ-ОТВЕТЫ</a>
     </section>
     <section id="whatWeCan">
-      <h2>что мы можем создать?</h2>
-      <div>
-        <div class="column">
-          <div class>
+      <div class="mob-wrapper">
+        <div class="column can">
+          <h2>что мы можем создать?</h2>
+          <div class="plate-wrapper">
             <div class="column gif-plate">
               <img src="img/gif/infogr.gif">
               <hr>
@@ -60,7 +61,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="plate-wrapper">
             <div class="column gif-plate">
               <img src="img/gif/promo.gif">
               <hr>
@@ -85,10 +86,10 @@
           </a>
           <div class="column green-field">
             <p class="upper">Оставьте заявку на расчет<br> стоимости видеоролика и получите <br>продвижение в YouTube</p>
-            <input id="name" name="name" type="text" placeholder="Ваше имя" required=""/>
-            <input class="email" id="email" name="email" type="email" placeholder="Ваш E-mail" required="" title="Введите Ваш E-mail">
-            <input id="phone" name="phone" id="phone1" type="text" placeholder="Ваш номер телефона" required=""/>
-            <input class="button" id="order-1" type="submit" value="отправить заявку"/>
+            <input id="name" name="name" type="text" placeholder="   Ваше имя" required=""/>
+            <input class="email" id="email" name="email" type="email" placeholder="   Ваш E-mail" required="" title="Введите Ваш E-mail">
+            <input id="phone" name="phone" id="phone1" type="text" placeholder="   Ваш номер телефона" required=""/>
+            <input class="button" id="order-1" type="submit" value="   отправить заявку"/>
             <div class="grantee">
               <img src="img/lock.svg" alt="lock">
               <div>
@@ -101,7 +102,7 @@
     </section>
     <section id="orderUs">
       <h2>Заказав у нас, вы получите:</h2>
-      <div>
+      <div class="mob-wrapper">
         <div class="ol">
           <img src="img/1incircle.svg" alt="first">
           <p>Консультацию по продвижению в YouTube в подарок</p>
@@ -149,47 +150,47 @@
     </section>
     <section id="whyWe">
       <h2>Почему вам стоит заказать видеоролик именно у нас?</h2>
-      <div>
+      <div class="mob-wrapper">
         <div>
           <img src="img/why-1.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>соблюдаем сроки</h3>
             <p>В среднем, производство 60 секундного ролика занимает 10-15 дней, срок прописывается в договоре. Если мы утвердили сроки, то проект обязательно будет готов к указанной дате.</p>
           </div>
         </div>
         <div>
           <img src="img/why-2.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>Работа под ключ</h3>
             <p>Выполняем любые проекты, начиная от рисованной анимации до полностью трехмерных роликов. Мы пишем отличные сценарии, подбираем музыку и звуковые эффекты, профессионально анимируем, создаем модели, монтируем, а затем и продвигаем ваш ролик.</p>
           </div>
         </div>
         <div>
           <img src="img/why-3.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>Наши ролики смотрят</h3>
             <p>Видео должно работать! Мы вместе с партнерами выводим ролики в топ YouTube и Google по вашим целевым запросам. А также размещаем ваш ролик на специальных площадках для получения целевых просмотров.</p>
           </div>
         </div>
       </div>
-      <div>
+      <div class="mob-wrapper">
         <div>
           <img src="img/why-4.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>Клиенты нас рекомендуют</h3>
             <p>37% клиентов повторно заказывают у нас видеоролики и рекомендуют нас своим друзьям, партнерам. Это лучшая оценка нашей деятельности.</p>
           </div>
         </div>
         <div>
           <img src="img/why-5.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>Работаем до результата</h3>
             <p>Работаем над проектом до тех пор, пока не услышим от вас заветное "Это круто! Нам нравится!".</p>
           </div>
         </div>
         <div>
           <img src="img/why-6.svg">
-          <div class="column">
+          <div class="column why-text">
             <h3>Увеличение конверсии сайта</h3>
             <p>Конверсия страницы, на которой есть видео, на 35% выше конверсии страницы, где есть только текст.</p>
           </div>
@@ -197,7 +198,7 @@
       </div>
       <hr>
       <a href="mail:welcome@wesixhats.com" class="mail">welcome@wesixhats.com</a>
-      <div class="jcc">
+      <div class="jcc mob-wrapper contacts-bar">
         <div class="column">
           <a href="tel:+380991006421" class="tel">+38 (099) 100 64 21</a>
           <a href="tel:+380638566040" class="tel">+38 (063) 856 60 40</a>
@@ -670,44 +671,44 @@
     <section id="reviews">
       <h2>ОТЗЫВЫ</h2>
       <div class="slickCarouselWrapper">
-            <div class="item flexWrapperRev">
+            <div class="item flex-wrapper">
                 <div>
                     <img src="img/person-1.png" class="rev-photo" alt="">
                 </div>
-                <div class="rev-container">
+                <div class="column jcc">
                     <h3>Богдан Бойко</h3>
                     <p>Основатель <i>www.joinfo.ua</i></p>
                     <br>
                     <p>Заказывали у ребят промо ролик для своего портала Joinfo.ua. Принцип был "шо то хотим а кого не знаю" , но ребята справились на отлично. Как говорится : Рекомендую!</p>
                 </div>
             </div>
-            <div class="item flexWrapperRev">
+            <div class="item flex-wrapper">
                 <div>
                     <img src="img/person-2.png" class="rev-photo" alt="">
                 </div>
-                <div class="rev-container">
+                <div class="column jcc">
                     <h3>Eugen Polevoi</h3>
                     <p>CEO lightweight LLC</p>
                     <br>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
             </div>
-            <div class="item flexWrapperRev">
+            <div class="item flex-wrapper">
                 <div>
                     <img src="img/person-5.png" class="rev-photo" alt="">
                 </div>
-                <div class="rev-container">
+                <div class="column jcc">
                     <h3>Ekaterina Barabashkina</h3>
                     <p>Cofounder <i>www.somesites.com</i></p>
                     <br>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
-            <div class="item flexWrapperRev">
+            <div class="item flex-wrapper">
                 <div>
                     <img src="img/person-4.png" class="rev-photo" alt="">
                 </div>
-                <div class="rev-container">
+                <div class="column jcc">
                     <h3>Name Surname</h3>
                     <p>your oportunity</p>
                     <br>
@@ -717,8 +718,8 @@
         </div>
     </section>
     <footer>
-      <div>
-        <p>WE CREATE AND INSPIRE.</p>
+      <div class="social jcsb">
+        <h2>WE CREATE AND INSPIRE.</h2>
         <div>
           <a href="https://www.facebook.com/wesixhats/" target="_blank"><img src="img/blog/facebook.svg" alt=""/></a>
           <a class="soc-g" href="https://plus.google.com/+SixHats/posts" target="_blank"><img src="img/blog/google-plus.svg" alt=""/></a>
@@ -727,12 +728,12 @@
           <a href="https://www.behance.net/sixhats" target="_blank"><img src="img/blog/behance.svg" alt=""/></a>
         </div>
       </div>
-      <div>
+      <div class="bord">
         <p>Мы - креативная команда, которая помогает решать задачи любого бизнеса. Мы умеем и любим создавать идеи, понятные пользователям и потребителям. Мы — практики, которые любят и хотят находить только самые креативные и эффективные решения для клиента. Мы готовы решать самые сложные задачи. С творческим началом, высоким профессионализмом и индивидуальным подходом.</p>
       </div>
-      <div>
-        <p>Рекламное агентство wesixhats.com. Все права защищены. © 2016 «sixhats»</p>
-        <p>Сделано в wesixhats.com</p>
+      <div class="rights jcsb">
+        <small>Рекламное агентство wesixhats.com. Все права защищены. © 2016 «sixhats»</small>
+        <small>Сделано в wesixhats.com</small>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
