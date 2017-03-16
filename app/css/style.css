@@ -1,0 +1,678 @@
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA15Thin.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA25ExtraLight.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA35Light.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA45Regular.otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA55Medium.otf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA65Bold.otf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA75ExtraBold.otf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'CoreSans';
+    src: url(fonts/CoreSansA85Heavy.otf);
+    font-weight: 800;
+}
+
+:root{
+  p, a, li, h1, h2, h3, h4, div{
+    font-family: 'CoreSans';
+    font-weight: 400;
+  }
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.jcsa{
+    justify-content: space-around;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  background-color: #E8E7F0;
+
+  .headerBar{
+    margin-top: 1.8vw;
+    margin-left: 7.8vw;
+    margin-bottom: 8.6vw;
+
+    img{
+      width: 14vw;
+      height: 50%;
+      margin-top: 1.5vw;
+      margin-right: 7.8vw;
+    }
+
+    .langBar{
+      margin-top: 1.5vw;
+      margin-right: 40.9vw;
+      p{font-size: 1.8vw;color: red;}
+      a{font-size: 1.8vw;}
+    }
+  }
+
+  .contactsBar{
+    flex-direction: column;
+    align-items: center;
+
+    .tel{
+      font-size: 1.65vw;
+      font-weight: 300;
+      margin-bottom: 0.5vw;
+    }
+
+    .mail{
+      margin-top: 0.5vw;
+      font-size: 1.32vw;
+      font-weight: 300;
+    }
+
+    .button{
+      margin-top: 2.8vw;
+      width: 11.8vw;
+      height: 3vw;
+      background: red;
+      color: #fff;
+      font-size: 1vw;
+      font-weight: 600;
+      border: 2px solid red;
+      cursor: pointer;
+    }
+
+    .button:hover{
+      color: red;
+      background-color: #fff;
+    }
+  }
+
+  .create{
+    flex-direction: column;
+    margin-left: 7.8vw;
+    margin-right: 13.8vw;
+    margin-bottom: 7.8vw;
+
+    h1{
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+
+    p{
+      font-size: 1.95vw;
+      text-align: right;
+    }
+  }
+}
+
+#navigation{
+  flex-direction: row;
+  align-items: center;
+  height: 7vw;
+
+  img{
+    margin-right: 1.5vw;
+    margin-left: 7.8vw;
+    width: 15.8vw;
+    height: 3.5vw;
+  }
+
+  a{
+    font-size: 1.2vw;
+    padding: 0 3.1vw;
+    line-height: 1.5;
+    border-right: 1px solid red;
+  }
+
+  a:hover{
+    color: darkgoldenrod;
+  }
+
+  a:last-of-type{
+    border: none;
+  }
+}
+
+#whatWeCan{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-bottom: 3.7vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5.85vw;
+    margin-bottom: 5.5vw;
+  }
+
+  .gif-plate{
+    width: 25.5vw;
+    height: 32.3vw;
+    margin-right: 2.4vw;
+    margin-bottom: 2.4vw;
+    background: #fff;
+    box-shadow: 0 0 0.8vw rgba(0,0,0,0.5);
+
+    img{
+      height: 25.4vw;
+    }
+
+    hr{
+      background: red;
+      height: 1px;
+      border: none;
+      width: 100%;
+      margin: 0;
+    }
+
+    .text-plate{
+      background-color: #fff;
+      height: 6.8vw;
+      padding-left: 2.2vw;
+      padding-right: 2.2vw;
+
+      p{
+        font-size: 0.86vw;
+      }
+
+      p:first-of-type{
+        font-size: 1.56vw;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0.5vw;
+        margin-top: 0.8vw;
+      }
+    }
+  }
+
+  .aside{
+    margin-left: 3.77vw;
+
+    .video-play-img{
+    width: 16vw;
+    height: 4vw;
+    margin-bottom: 3.6vw;
+    }
+
+    .green-field{
+      background-color: #BEDB89;
+      width: 100%;
+      padding: 2.15vw;
+      align-items: center;
+
+      p{
+        font-size: 1vw;
+        font-weight: 300;
+        text-align: center;
+        color: #fff;
+      }
+
+      p.upper{
+        margin-bottom: 3vw;
+        color: black;
+        font-size: 1.17vw;
+        font-weight: 500;
+      }
+
+      input{
+        margin-bottom: 0.8vw;
+        font-size: 1vw;
+        width: 22.4vw;
+        height: 2.34vw;
+      }
+
+      .button{
+        width: 16.25vw;
+        height: 3.3vw;
+        font-size: 1.25vw;
+        font-weight: 600;
+        color: #fff;
+        background-color: red;
+        border: 2px solid red;
+        margin-bottom: 3.9vw;
+        cursor: pointer;
+      }
+
+      .button:hover{
+        color: red;
+        background-color: #fff;
+      }
+
+      .grantee{
+        height: 2.34vw;
+
+        img{
+        width: 1.3vw;
+        margin-right: 1vw;
+        }
+      }
+    }
+  }
+}
+
+#orderUs{
+  background-color: #5072A7;
+  padding-left: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 3.12vw;
+  }
+
+  div.ol{
+    align-items: center;
+    margin-top: 3.1vw;
+    margin-bottom: 4.3vw;
+    margin-right: 8.7vw;
+
+    img{
+      width: 3vw;
+      margin-right: 1.56vw;
+    }
+
+    p{
+      font-size: 1.25vw;
+      font-weight: 300;
+      color: #fff;
+    }
+  }
+}
+
+
+#forWhat{
+  padding-left: 7.8vw;
+  padding-bottom: 4.7vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 3.12vw;
+    margin-bottom: 3.12vw;
+  }
+
+  .reasons{
+    align-items: center;
+    margin-bottom: 4.7vw;
+
+    img{
+      width: 6.25vw;
+      margin-right: 4.7vw;
+    }
+
+    h3{
+        font-size: 1.5vw;
+        font-weight: 600;
+        margin-bottom: 1.5vw;
+    }
+
+    p{
+      font-size: 1.4vw;
+      font-weight: 300;
+    }
+  }
+}
+
+
+#whyWe{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+
+  img{
+    height: 8.4vw;
+    margin-right: 1.5vw;
+  }
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 3.12vw;
+    margin-bottom: 3.12vw;
+  }
+
+  h3{
+    font-size: 1.25vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1.5vw;
+  }
+
+  p{
+    font-size: 1.1vw;
+    font-weight: 300;
+    width: 18vw;
+    margin-right: 6vw;
+    margin-bottom: 6.25vw;
+  }
+
+  hr{
+    width: 61.5vw;
+    background-color: red;
+    border: none;
+    height: 1px;
+    margin-top: 3.75vw;
+  }
+
+  .mail{
+    font-size: 2.58vw;
+    font-weight: 700;
+    margin-top: 5.3vw;
+    margin-bottom: 2.7vw;
+    text-align: center;
+  }
+
+  .tel{
+    font-size: 1.8vw;
+  }
+
+  .button{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: #fff;
+    background-color: red;
+    border: 2px solid red;
+    cursor: pointer;
+    margin-left: 5.7vw;
+    margin-bottom: 6vw;
+    height: 3.5vw;
+  }
+
+  .button:hover{
+    color: red;
+    background-color: #fff;
+  }
+}
+
+
+#howWork{
+  padding-left: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 6.25vw;
+    margin-bottom: 6.25vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    width: 19.3vw;
+    margin-right: 2.2vw;
+    margin-bottom: 1.4vw;
+  }
+
+  img.mobile{
+    display: none;
+  }
+
+  p{
+    font-size: 1.25vw;
+    width: 15.6vw;
+    margin-bottom: 7vw;
+  }
+}
+
+#whoWork{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+  padding-bottom: 2.7vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 4.7vw;
+    margin-bottom: 4.7vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    width: 13.3vw;
+    margin-bottom: 1.3vw;
+  }
+
+  p{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 4.3vw;
+  }
+}
+
+
+#portfolio{
+  width: 100%;
+
+  h2{
+    margin-top: 8.4vw;
+    margin-bottom: 3.4vw;
+    margin-left: 7.8vw;
+    font-size: 1.87vw;
+    font-weight: 700;
+  }
+
+  .kofta{
+    width: 24.85vw;
+
+    a{
+      width: 100%;
+
+      img{
+        width: 100%;
+        height: 18.6vw;
+      }
+
+      span.block{
+        display: none;
+      }
+    }
+  }
+}
+
+
+#clients{
+  background-color: #F5F2F1;
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+  padding-bottom: 7.8vw;
+
+  h2{
+    font-size: 1.87vw;
+    font-weight: 700;
+    margin-top: 4.7vw;
+    margin-bottom: 4.7vw;
+    text-transform: uppercase;
+  }
+
+  img{
+    max-width: 10.5vw;
+  }
+}
+
+#questions{
+  padding-left: 7.8vw;
+  padding-right: 7.8vw;
+
+  .questionBar{
+    margin-top: 9.6vw;
+
+    h2{
+      font-size: 4.85vw;
+      font-weight: 700;
+      color: #E8E7F0;
+      margin-bottom: 1.3vw;
+    }
+
+    p{
+      font-size: 1.8vw;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .contactsBar{
+      align-items: center;
+      margin-bottom: 3.9vw;
+
+      .tel{
+        font-size: 1.65vw;
+        margin-bottom: 0.5vw;
+      }
+
+      .mail{
+        margin-top: 0.5vw;
+        font-size: 1.25vw;
+        font-weight: 500;
+      }
+
+      .button{
+        margin-top: 2vw;
+        width: 11.8vw;
+        height: 3vw;
+        background: red;
+        color: #fff;
+        font-size: 1vw;
+        font-weight: 600;
+        border: 2px solid red;
+        cursor: pointer;
+      }
+
+      .button:hover{
+        color: red;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .accordion-container{
+    margin-bottom: 13vw;
+
+    a.outter{
+      display: flex;
+      justify-content: space-between;
+      height: 4.7vw;
+      align-items: center;
+      background-color: #F5F2F1;
+      margin-bottom: 1.5vw;
+      cursor: pointer;
+
+      p{
+        font-size: 1.4vw;
+        margin-left: 2.3vw;
+      }
+
+      img{
+        width: 2.7vw;
+        margin-right: 2.3vw;
+      }
+    }
+
+    .inner{
+
+      .set{
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 2px;
+
+        a{
+          font-size: 1.4vw;
+          font-weight: 500;
+          padding: 0.6vw 1.2vw;
+          cursor: pointer;
+        }
+
+        .content{
+          border-top: 1px solid lightgray;
+
+          p{
+            font-size: 1.4vw;
+            font-weight: 300;
+            padding: 0.6vw 1.2vw;
+          }
+
+          ol{
+            list-style-position: inside;
+
+            li{
+              font-size: 1.4vw;
+              font-weight: 300;
+              padding: 0.6vw 1.2vw;
+            }
+          }
+
+          ul{
+            list-style-position: inside;
+
+            li{
+              font-size: 1.4vw;
+              font-weight: 300;
+              padding: 0.6vw 1.2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
