@@ -505,6 +505,10 @@ header{
     text-align: center;
     margin-bottom: 4.3vw;
   }
+
+  .show-more{
+    display: none;
+  }
 }
 
 
@@ -535,6 +539,10 @@ header{
       }
     }
   }
+
+  .show-more{
+    display: none;
+  }
 }
 
 
@@ -555,13 +563,17 @@ header{
   img{
     max-width: 10.5vw;
   }
+
+  .show-more{
+    display: none;
+  }
 }
 
 #questions{
   padding-left: 7.8vw;
   padding-right: 7.8vw;
 
-  .questionBar{
+  .question-bar{
     margin-top: 9.6vw;
 
     h2{
@@ -577,7 +589,7 @@ header{
       text-transform: uppercase;
     }
 
-    .contactsBar{
+    .contacts-bar{
       align-items: center;
       margin-bottom: 3.9vw;
 
@@ -1013,17 +1025,331 @@ header{
   }
 
   .mail{
-    font-size: 4.4vw;
+    font-size: 5vw;
   }
 
   .tel{
     font-size: 7.3vw;
+    margin: 1vw auto;
   }
 
   .button{
     width: 45.6vw;
     height: 7.6vw;
     font-size: 3.4vw;
+    margin: 8.5vw auto 11.5vw;
+  }
+}
+
+#howWork{
+  padding-bottom: 14vw;
+
+  h2{
+    font-size: 5vw;
+    margin-top: 16.9vw;
+    margin-bottom: 15.6vw;
+  }
+
+  .mob-col{
+    flex-direction: column;
+
+    img{
+      display: none;
+    }
+
+    img.mobile{
+      display: initial;
+      width: 84.4vw;
+    }
+
+    p{
+      font-size: 4.4vw;
+      width: 84.4vw;
+    }
+  }
+}
+
+#whoWork{
+  padding: 0;
+
+  h2{
+    font-size: 5vw;
+    margin-top: 16.9vw;
+    margin-bottom: 15.6vw;
+    text-align: center;
+  }
+
+  .mob-col{
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 46vw;
+      border: 4px solid #DADADA;
+      border-radius: 50%;
+    }
+
+    p{
+      font-size: 5.6vw;
+    }
+  }
+
+  .show-more{
+    background-color: #5072A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14.6vw;
+
+    p{
+      color: #fff;
+      font-size: 5vw;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+
+      img{
+        width: 4vw;
+        margin-left: 2vw;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#portfolio{
+  h2{
+    font-size: 5vw;
+    margin-top: 16.9vw;
+    margin-bottom: 15.6vw;
+  }
+
+  .mob-col{
+    flex-direction: column;
+    align-items: center;
+
+    .kofta{
+      width: 89vw;
+
+      img{
+        width: 89vw;
+        height: 52.5vw;
+      }
+    }
+  }
+
+  .show-more{
+    background-color: #5072A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14.6vw;
+
+    p{
+      color: #fff;
+      font-size: 5vw;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+
+      img{
+        width: 4vw;
+        margin-left: 2vw;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#clients{
+  padding: 0;
+
+  h2{
+    font-size: 5vw;
+    margin-top: 16.9vw;
+    margin-bottom: 15.6vw;
+    margin-left: 7.8vw;
+  }
+
+  .mob-col{
+    flex-direction: column;
+    align-items: center;
+  }
+  img{
+    max-width: 46vw;
+    margin-bottom: 10vw;
+  }
+
+  .show-more{
+    background-color: #5072A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14.6vw;
+
+    p{
+      color: #fff;
+      font-size: 5vw;
+      font-weight: 300;
+      margin: 0;
+      text-transform: uppercase;
+
+      img{
+        width: 4vw;
+        margin-left: 2vw;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#questions{
+
+  .question-bar{
+    flex-direction: column;
+
+    h2{
+      font-size: 11.2vw;
+      color: #000;
+    }
+
+    p{
+      font-size: 5.9vw;
+      margin-bottom: 22vw;
+    }
+
+    .contacts-bar{
+
+      .tel{
+        font-size: 5.9vw;
+      }
+
+      .mail{
+        font-size: 4.7vw;
+        margin-bottom: 9vw;
+      }
+
+      .button{
+        width: 37vw;
+        height: 9.5vw;
+        font-size: 3.12vw;
+        margin-bottom: 16.5vw;
+      }
+    }
+  }
+
+  .accordion-container{
+    a.outter{
+      height: 12.5vw;
+      p{
+        font-size: 4.7vw;
+      }
+      img{
+        width: 7.2vw;
+      }
+    }
+    .inner{
+      .set{
+        a{
+          font-size: 3.3vw;
+        }
+
+        .content{
+          p{
+            font-size: 3.3vw;
+          }
+
+          ul{
+            li{
+              font-size: 3.3vw;
+            }
+          }
+
+          ol{
+            li{
+              font-size: 3.3vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#reviews{
+  padding: 0;
+
+  h2{
+    font-size: 5vw;
+    margin-top: 16.9vw;
+    margin-left: 7.8vw;
+  }
+
+  .flex-wrapper{
+    flex-direction: column;
+    margin: 0 7.8vw 11.7vw;
+
+    img{
+      width: 53vw;
+      height: 53vw;
+      margin: 15vw auto;
+    }
+
+    h3{
+      font-size: 7.5vw;
+    }
+
+    p{
+      font-size: 5vw;
+      max-width: 84.4vw;
+      margin-bottom: 5vw;
+    }
+  }
+}
+
+footer{
+  padding-right: 7.8vw;
+
+  .social{
+    flex-direction: column;
+    padding: 0;
+
+    h2{
+      font-size: 7.1vw;
+      margin-top: 17vw;
+    }
+
+    .mob-jcsb{
+      justify-content: space-between;
+      margin-top: 10vw;
+
+      a{
+        margin-right: 4.4vw;
+
+        img{
+          height: 6.25vw;
+        }
+      }
+    }
+  }
+
+  .bord{
+    margin-top: 18vw;
+    margin-right: 0;
+    margin-bottom: 16.9vw;
+
+    p{
+      font-size: 4.7vw;
+    }
+  }
+
+  .rights{
+    flex-direction: column;
+
+    small{
+      font-size: 4vw;
+      margin-bottom: 6.25vw;
+    }
   }
 }
 }

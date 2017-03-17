@@ -1,17 +1,24 @@
 //mobile
 $(document).ready(function(){
   if (window.matchMedia('(max-width: 425px)').matches) {
-      $('.contacts-bar').insertAfter('.create');
+      $('header .contacts-bar').insertAfter('.create');
+      $('.slick-dots').insertAfter('.slickCarouselWrapper');
   }
 })
 
 $( window ).resize(function() {
   if (window.matchMedia('(max-width: 425px)').matches) {
-    $('.contacts-bar').insertAfter('.create');
+    $('header .contacts-bar').insertAfter('.create');
   }else{
-    $('.contacts-bar').insertAfter('.lang-bar');
+    $('header .contacts-bar').insertAfter('.lang-bar');
   }
 });
+
+$(document).ready(function(){
+  $('.show-more').on('click', function(){
+    $('.toggle').toggleClass('mob-off')
+  })
+})
 
 //slick carousel
 $(document).ready(function(){
