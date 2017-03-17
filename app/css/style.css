@@ -175,6 +175,10 @@ header{
   align-items: center;
   height: 7vw;
 
+  .mob-nav{
+    display: none;
+  }
+
   img{
     margin-right: 1.5vw;
     margin-left: 7.8vw;
@@ -843,6 +847,42 @@ header{
 
 #navigation{
   display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ABBBCF;
+
+  img{
+    width: 15vw;
+    height: 11.25vw;
+    margin: 5vw auto 16.25vw;
+  }
+
+  img.cancel{
+    width: 4vw;
+    margin-top: 2vw;
+    margin-bottom: 0;
+    margin-left: 89vw;
+  }
+
+  hr{
+    width: 10vw;
+    height: 2px;
+    border: none;
+    background: red;
+    margin: 5vw auto;
+  }
+
+  a{
+    border: none;
+    font-size: 7vw;
+  }
+
+  .mob-nav{
+    display: initial;
+  }
 }
 
 #whatWeCan{

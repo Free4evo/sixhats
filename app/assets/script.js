@@ -7,7 +7,7 @@ $(document).ready(function(){
 })
 
 $( window ).resize(function() {
-  if (window.matchMedia('(max-width: 425px)').matches) {
+  if (window.matchMedia('(max-width: 425px)').matches){
     $('header .contacts-bar').insertAfter('.create');
   }else{
     $('header .contacts-bar').insertAfter('.lang-bar');
@@ -18,6 +18,21 @@ $(document).ready(function(){
   $('.show-more').on('click', function(){
     $('.toggle').toggleClass('mob-off')
   })
+})
+
+//mobile menu
+$(document).ready(function(){
+  $('.nav-button').on('click', function(){
+    $('#navigation').css("display", "flex")
+  })
+  $('.cancel').on('click', function(){
+    $('#navigation').css("display", "none")
+  })
+  if (window.matchMedia('(max-width: 425px)').matches){
+    $('#navigation a').on('click', function(){
+      $('#navigation').css("display", "none")
+    })
+  }
 })
 
 //slick carousel
