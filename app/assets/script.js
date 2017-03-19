@@ -17,6 +17,13 @@ $( window ).resize(function() {
 $(document).ready(function(){
   $('.show-more').on('click', function(){
     $('.toggle').toggleClass('mob-off')
+    if ($('.show-more p span').html()=='больше'){
+      $('.show-more p span').text('меньше');
+      $('.show-more p img').attr("src", "img/less.svg")
+    } else {
+      $('.show-more p span').text('больше');
+      $('.show-more p img').attr("src", "img/more.svg")
+    }
   })
 })
 
@@ -59,8 +66,8 @@ $(document).ready(function(){
 //drop down
 $(document).ready(function(){
   $(".set > a").siblings(".content").slideUp();
-  $(".set > a").on("click", function(event){
-    event.preventDefault();
+  $(".set > a").on("click", function(e){
+    e.preventDefault();
     if($(this).hasClass("outter") && $(this).hasClass("active")){
       $(".set > a img").attr("src", "img/down-arrow.svg");
       $(".set > a").removeClass("active");
@@ -77,4 +84,18 @@ $(document).ready(function(){
   });
 });
 
-
+//show_video_popup
+$(document).ready(function(){
+  $('.show_video_popup').on('click', function(e){
+    e.preventDefault()
+    $('.video-popup').css("display", "flex")
+    $('.video-popup iframe').attr("src", $(this).attr("href"))
+    if (window.matchMedia('(max-width: 425px)').matches){
+      $('.video-popup iframe').attr("width", "100%")
+    }
+  })
+  $('.video-popup').on('click', function(){
+    $('.video-popup').css("display", "none")
+    $('iframe').attr('src', $('iframe').attr('src'))
+  })
+})
